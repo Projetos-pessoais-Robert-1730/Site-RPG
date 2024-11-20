@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <script src="../js/login.js"></script>
     <title>Home - RPG</title>
 </head>
 <body>
     <header class="navbar">
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./html/informação.html">Informações</a>
-            <a href="./html/login.html">Fichas</a>
-            <button>Login</button>
+            <div class="logo">
+                <img src="" alt="" onclick="window.location.href='../index.html'">
+            </div>
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="./informacao.html">Informações</a>
+                <a href="./fichas.html">Fichas</a>
+            </div>
+            <button onclick="window.location.href='./login.html'">Login</button>
         </nav>
     </header>
     <main>
@@ -34,7 +42,7 @@
                     <!-- Colocar o Olho -->
                     <div class="validações" id="div_validaçãoSenha"></div>
                 </div>
-                <button onclick="logar()"></button>
+                <button onclick="logar()">Entrar</button>
             </div>
         </section>
     </main>

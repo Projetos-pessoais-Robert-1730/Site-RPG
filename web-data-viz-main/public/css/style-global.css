@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+
+/* Header */
+header {
+    background-color: #090708;
+    height: 8vh;
+}
+
+header nav {
+    display: flex;
+    height: 100%;
+    color: #D7B89E;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Crimson Text", serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+header .logo {
+    width: 4vw;
+    height: 70%;
+    background-color: #D7B89E;
+}
+
+header .links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+header a {
+    text-decoration: none;
+    color: #D7B89E;
+}
+
+header a:hover {
+    color: #BF3A53;
+    transition: 0.3s;
+}
+
+header button {
+    font-family: "Crimson Text", serif;
+    font-size: large;
+    font-weight: 600;
+
+    background-color: #D7B89E;
+    color: #120E10;
+    padding: 5px 30px;
+    height: 50%;
+
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Body */
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #120E10;
+    color: #D7B89E;
+    height: 84vh;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #090708;
+    font-family: "Crimson Text", serif;
+    color: #D7B89E;
+    height: 8vh;
+}
+
+.footerMeio {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    border-right: #D7B89E 1px solid;
+    border-left: #D7B89E 1px solid;
+    padding: 0px 50px;
+}
