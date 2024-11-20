@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../js/cadastro.js"></script>
+    <title>Home - RPG</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./informação.html">Informações</a>
+            <a href="./login.html">Fichas</a>
+            <button>Login</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="div_CaixaCadastro">
+                <h1>Cadastro</h1>
+                <div class="div_inputs">
+                    <p>Nome</p>
+                    <input type="text" id="ipt_nome" placeholder="Nome">
+                    <div class="validações" id="div_validaçãoNome"></div>
+                </div>
+                <div class="div_inputs">
+                    <p>Email</p>
+                    <input type="text" id="ipt_email" placeholder="Email">
+                    <div class="validações" id="div_validaçãoEmail"></div>
+                </div>
+                <div class="div_inputs">
+                    <p>Senha</p>
+                    <input type="password" id="ipt_senha" placeholder="Senha">
+                    <!-- Colocar o Olho -->
+                    <div class="validações" id="div_validaçãoSenha"></div>
+                </div>
+                <div class="div_inputs">
+                    <p>Confirme a senha</p>
+                    <input type="password" id="ipt_confirmaçãoSenha" placeholder="Confirmação da Senha">
+                    <!-- Colocar o Olho -->
+                    <div class="validações" id="div_validaçãoSenha2"></div>
+                </div>
+                <div class="div_inputs">
+                    <p>RPG favorito:</p>
+                    <select id="slt_sistemaFavorito">
+                        <option value="#" selected disabled>Selecione um:</option>
+                        <option value="Ordem">Ordem paranormal</option>
+                        <option value="D&D">Dungeons and Dragons</option>
+                        <option value="Tormenta">Tormenta 20</option>
+                        <option value="Outros">Outro</option>
+                    </select>
+                    <!-- Colocar o Olho -->
+                    <div class="validações" id="div_validaçãoSistema"></div>
+                </div>
+                <div class="div_inputs">
+                    <p>Modo favorito de jogar:</p>
+                    <select id="slt_tipoDeJogador">
+                        <option value="#" selected disabled>Selecione um:</option>
+                        <option value="Ordem">Jogador</option>
+                        <option value="D&D">Mestre</option>
+                        <option value="Tormenta">Ambos</option>
+                        <!-- <option value="Outros">Outro</option> Talvez colocar opção de assistir? -->
+                    </select>
+                    <!-- Colocar o Olho -->
+                    <div class="validações" id="div_validaçãoTipo"></div>
+                </div>
+                <button onclick="cadastrar()">Cadastrar</button>
+                <p>Já possui um cadastro? <a href="./login.html">Login</a></p>
+            </div>
+            <div id="imagens">
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerInicio">
+            <!-- <img src="" alt=""> Logo -->
+            <p>Taverna das Lendas</p>
+        </div>
+        <div class="footerMeio">
+            <p> Criado por Robert Ferreira - © 2024 Taverna Das Lendas </p>
+        </div>
+        <div class="footerFinal">
+            <!-- <img src="" alt="">  I de informações -->
+        </div>
+    </footer>
+</body>
+</html>

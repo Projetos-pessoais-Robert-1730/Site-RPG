@@ -1,0 +1,20 @@
+body {
+    margin: 0; 
+    /* display: flex; */
+    /* justify-content: center; 
+    align-items: center;  */
+    min-height: 100vh; 
+    min-width: 100vh; 
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+.navbar nav{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
