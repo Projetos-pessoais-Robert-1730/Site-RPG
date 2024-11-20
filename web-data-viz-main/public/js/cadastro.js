@@ -112,7 +112,7 @@ function cadastrar(){
         } 
 
         if(nomeValidado && emailValidado && senhaValidado && confirmacaoValidado){
-            botao.innerHTML = `Logar`
+            // botao.innerHTML = `Logar`
 
             ipt_nome.readOnly = true
             ipt_email.readOnly = true

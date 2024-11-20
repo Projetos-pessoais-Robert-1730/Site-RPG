@@ -1,11 +1,25 @@
 CREATE DATABASE TavernaDasLendas;
 USE TavernaDasLendas;
 
-CREATE TABLE Usuario (
+CREATE TABLE tipoDeJogador (
+	idTipoDeJogador INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(10)
+);
+
+CREATE TABLE sistema (
+	idSistema INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(20)
+);
+
+CREATE TABLE usuario (
     idUsuario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50),
     email VARCHAR(255),
-    senha VARCHAR(255)
+    senha VARCHAR(255),
+    fkTipoDeJogador INT,
+    FOREIGN KEY (fkTipoDeJogador) REFERENCES tipoDeJogador (idTipoDeJogador),
+    fkSistema INT,
+    FOREIGN KEY (fkSistema) REFERENCES sistema (idSistema)
 );
 
 CREATE TABLE fichas (
@@ -17,7 +31,7 @@ CREATE TABLE fichas (
     raca VARCHAR(50),
     pontosDeExperiencia INT,
     fkUsuario INT,
-    FOREIGN KEY (fkUsuario) REFERENCES Usuario(idUsuario)
+    FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );
 
 CREATE TABLE atributos (
@@ -66,3 +80,23 @@ CREATE TABLE caracteristicas (
     fkFichas INT,
     FOREIGN KEY (fkFichas) REFERENCES fichas(idFichas)
 );
+
+INSERT INTO tipoDeJogador (nome) VALUES 
+("Jogador"),
+("Mestre"),
+("Ambos");
+
+INSERT INTO sistema (nome) VALUES
+("Ordem paranormal"),
+("Dungeons and Dragons"),
+("Tormenta 20"),
+("Outros");
+
+INSERT INTO usuario (nome, email, senha, fkSistema, fkTipoDeJogador) VALUES
+("Robert Ferreira", "robert.souza@sptech.school", "123456789", "1", "3");
+
+-- Selects para puxar as opções no Select do HTML na hora do cadastro
+
+SELECT * from tipoDeJogador;
+SELECT * from sistema;
+SELECT * FROM usuario;
