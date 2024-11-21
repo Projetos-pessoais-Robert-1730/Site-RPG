@@ -95,8 +95,22 @@ INSERT INTO sistema (nome) VALUES
 INSERT INTO usuario (nome, email, senha, fkSistema, fkTipoDeJogador) VALUES
 ("Robert Ferreira", "robert.souza@sptech.school", "123456789", "1", "3");
 
--- Selects para puxar as opções no Select do HTML na hora do cadastro
+-- Selects utilizados em fetchs
 
-SELECT * from tipoDeJogador;
-SELECT * from sistema;
-SELECT * FROM usuario;
+    SELECT * from tipoDeJogador;
+    
+    SELECT * from sistema;
+    
+    SELECT * FROM usuario;
+    
+    SELECT COUNT(fkSistema) AS "Quantidade total", 
+            sistema.nome AS "Sistema escolhido" 
+    FROM usuario 
+        JOIN sistema ON fkSistema = idSistema 
+    GROUP BY sistema.nome;
+
+    SELECT COUNT(fkTipoDeJogador) AS "Quantidade total", 
+            tipoDeJogador.nome AS "Tipo de jogador escolhido" 
+    FROM usuario 
+        JOIN tipoDeJogador ON fktipoDeJogador = idtipoDeJogador 
+    GROUP BY tipoDeJogador.nome;
