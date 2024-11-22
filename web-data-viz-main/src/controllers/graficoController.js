@@ -1,26 +1,44 @@
 var graficoModel = require("../models/graficoModel");
 
-function mostrarGrafico(req, res) {
+function mostrarGraficoTipo(req, res) {
 
-        graficoModel.buscarDadosTipo()
-            .then(
-                function (lista) {
-                    res.json({
-                        listaFinal: lista
-                    })
-                    console.log(lista[0].Tipo + ' TESTE AQUI');
-                }
-            ).catch(
-                function (erro) {
-                    console.log(erro);
-                    console.log("\nHouve um erro ao realizar o login! Erro: ", erro.sqlMessage);
-                    res.status(500).json(erro.sqlMessage);
-                }
-            );
-    }
+    graficoModel.buscarDadosTipo()
+        .then(
+            function (lista) {
+                res.json({
+                    listaFinal: lista
+                })
+                console.log(lista[0].Tipo + ' TESTE AQUI');
+            }
+        ).catch(
+            function (erro) {
+                console.log(erro);
+                console.log("\nHouve um erro ao realizar o login! Erro: ", erro.sqlMessage);
+                res.status(500).json(erro.sqlMessage);
+            }
+        );
+}
 
+function mostrarGraficoSistema(req, res) {
 
+    graficoModel.buscarDadosSistema()
+        .then(
+            function (lista) {
+                res.json({
+                    listaFinal: lista
+                })
+                console.log(lista[0].Tipo + ' TESTE AQUI');
+            }
+        ).catch(
+            function (erro) {
+                console.log(erro);
+                console.log("\nHouve um erro ao realizar o login! Erro: ", erro.sqlMessage);
+                res.status(500).json(erro.sqlMessage);
+            }
+        );
+}
 
 module.exports = {
-    mostrarGrafico
+    mostrarGraficoTipo,
+    mostrarGraficoSistema
 }

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-global.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/informacao.js"></script>
     <title>Informações - RPG</title>
 </head>
-<body onload="mostrarGrafico()">
+<body onload="mostrarGraficos()">
      
     <header class="navbar">
         <nav>
@@ -52,10 +53,11 @@
                 </p>
             </div>
             <div class="paiGráficos">
-                <div class="Gráficos" id="grafico"></div>
-                <canvas id="grafico-setor" style="width: 100px; background-color: #FFF;"></canvas>
+                <div class="Gráficos" id="grafico">
+                    <canvas id="graficoTipo" style="width: 100px; background-color: #FFF;"></canvas>
+                </div>
                 <div class="Gráficos">
-                    <!-- Inserir gráfico -->
+                    <canvas id="graficoSistema" style="width: 100px; background-color: #FFF;"></canvas>
                 </div>
             </div>
         </section>
@@ -82,60 +84,3 @@
 
 </body>
 </html>
-
-<script>
-    var lista = [];
-    var listaTipo = [];
-    var listaQuantidade = [];
-
-    var quantidadeAtual = '';
-    var tipoAtual = '';
-
-    function mostrarGrafico() {
-        var mensagem = '';
-        
-    fetch("/grafico/mostrar-grafico", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    }).then(function (resposta) {
-        console.log("ESTOU NO THEN DO entrar()!")
-
-        resposta.json().then(json => {
-                lista = json.listaFinal;
-                console.log(lista);
-
-                for(var cont = 0; cont < lista.length; cont++) {
-                quantidadeAtual = lista[cont].Quantidade;
-                tipoAtual = lista[cont].Tipo;
-
-                listaTipo.push(`'${tipoAtual}'`);
-                listaQuantidade.push(quantidadeAtual);
-                
-                }
-
-                const ctx = document.getElementById('grafico-setor');
-                    new Chart(ctx, {
-                    type: 'pie',
-                    data: {
-                    labels: listaTipo,
-                    borderColor: ['#ff0000' , '#F12323', '#123423'],
-                    datasets: [{
-                        label: 'Temperatura média',
-                        data: listaQuantidade,
-                        borderWidth: 1
-                    }],
-                    options: {
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            }
-                        }
-                     }
-                    }})
-            })
-
-})
-}
-</script>
