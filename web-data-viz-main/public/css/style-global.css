@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #120E10;
 }
 
 
@@ -7,6 +8,7 @@ body {
 header {
     background-color: #090708;
     height: 8vh;
+    user-select: none;
 }
 
 header nav {
@@ -62,27 +64,37 @@ header button {
 main {
     display: flex;
     flex-direction: column;
-    background-color: #120E10;
     color: #D7B89E;
-    height: 84vh;
+    min-height: 84vh;
+    height: auto;
+
+    font-family: "Crimson Text", serif;
 }
 
 /* Footer */
 footer {
     display: flex;
+    height: 8vh;
+    margin-top: 8vh;
     justify-content: space-around;
     align-items: center;
     background-color: #090708;
     font-family: "Crimson Text", serif;
     color: #D7B89E;
-    height: 8vh;
+}
+
+.footerInicio {
+    display: flex;
+    justify-content: center;
+    width: 40%;
 }
 
 .footerMeio {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 40%;
     height: 50%;
-    border-right: #D7B89E 1px solid;
     border-left: #D7B89E 1px solid;
     padding: 0px 50px;
 }

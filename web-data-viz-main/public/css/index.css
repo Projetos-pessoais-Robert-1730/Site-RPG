@@ -1,0 +1,33 @@
+section {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#banner {
+    display: flex;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/Estudando.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    align-items: center;
+    font-size: xx-large;
+}
+
+#banner h1 {
+    max-width: 62%;
+}
+
+.conteudo {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.conteudo h2 {
+    font-size: xx-large;
+}
+
+.conteudo p {
+    margin-top: 2vh;
+    font-size: 1.3rem;
+}
