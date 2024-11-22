@@ -1,5 +1,6 @@
 CREATE DATABASE TavernaDasLendas;
 USE TavernaDasLendas;
+DROP DATABASE TavernaDasLendas;
 
 CREATE TABLE tipoDeJogador (
 	idTipoDeJogador INT PRIMARY KEY AUTO_INCREMENT,
@@ -14,7 +15,7 @@ CREATE TABLE sistema (
 CREATE TABLE usuario (
     idUsuario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50),
-    email VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
     senha VARCHAR(255),
     fkTipoDeJogador INT,
     FOREIGN KEY (fkTipoDeJogador) REFERENCES tipoDeJogador (idTipoDeJogador),
@@ -114,3 +115,5 @@ INSERT INTO usuario (nome, email, senha, fkSistema, fkTipoDeJogador) VALUES
     FROM usuario 
         JOIN tipoDeJogador ON fktipoDeJogador = idtipoDeJogador 
     GROUP BY tipoDeJogador.nome;
+
+SHOW TABLES;

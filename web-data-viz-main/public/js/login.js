@@ -39,15 +39,9 @@ function logar() {
                 }, 1000); // apenas para exibir o loading
             });
 
-        } else {
+        } 
 
-            console.log("Houve um erro ao tentar realizar o login!");
-
-            resposta.text().then(texto => {
-                console.error(texto);
-                finalizarAguardar(texto);
-            });
-        }
+        // Fazer uma mensagem de erro quando não for e adicionar um aviso de redirecionamento
 
     }).catch(function (erro) {
         console.log(erro);

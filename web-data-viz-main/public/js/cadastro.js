@@ -153,6 +153,7 @@ function cadastrar(){
         })
         .catch(function (resposta) {
           console.log(`#ERRO: ${resposta}`);
+          alert("Tem alguém usando esse email")
         });
 
 }
