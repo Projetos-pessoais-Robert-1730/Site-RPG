@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="jsGlobal.Js" defer></script>
     <title>Home | Taverna das Lendas</title>
 </head>
 <body>
@@ -22,14 +23,16 @@
                 <a href="./html/informacao.html">Informações</a>
                 <a href="./html/fichas.html">Fichas</a>
             </div>
-            <button onclick="window.location.href='./html/login.html'">Login</button>
+            <div id="divBotaoCadastro">
+                <button id="botaoCadastro" onclick="window.location.href='./html/login.html'">Login</button>
+            </div>
         </nav>
     </header>
     <main>
 
         <section id="banner">
             <div id="div_inicio">
-                <h1> Bem vindo à Taverna das Lendas!</h1>
+                <h1> Bem vindo <span id="spanUsuario"></span> à Taverna das Lendas!</h1>
             </div>
         </section>
 

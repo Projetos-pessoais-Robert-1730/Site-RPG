@@ -119,41 +119,40 @@ function cadastrar(){
             ipt_senha.readOnly = true
             ipt_confirmaçãoSenha.readOnly = true
 
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  // crie um atributo que recebe o valor recuperado aqui
+                  // Agora vá para o arquivo routes/usuario.js
+                  nomeServer: nome,
+                  emailServer: email,
+                  senhaServer: senha,
+                  idSistemaServer: sistemaFavorito,
+                  idTipoServer: tipo
+        
+                }),
+              })
+                .then(function (resposta) {
+                  console.log("resposta: ", resposta);
+          
+                  if (resposta.ok) {
+                    setTimeout(() => {
+                      window.location = "login.html";
+                    }, "2000");
+        
+                  } else {
+                    throw "Houve um erro ao tentar realizar o cadastro!";
+                  }
+                })
+                .catch(function (resposta) {
+                  console.log(`#ERRO: ${resposta}`);
+                  alert("Tem alguém usando esse email")
+                });
         }
 
     }
-
-    fetch("/usuarios/cadastrar", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          // crie um atributo que recebe o valor recuperado aqui
-          // Agora vá para o arquivo routes/usuario.js
-          nomeServer: nome,
-          emailServer: email,
-          senhaServer: senha,
-          idSistemaServer: sistemaFavorito,
-          idTipoServer: tipo
-
-        }),
-      })
-        .then(function (resposta) {
-          console.log("resposta: ", resposta);
-  
-          if (resposta.ok) {
-            setTimeout(() => {
-              window.location = "login.html";
-            }, "2000");
-
-          } else {
-            throw "Houve um erro ao tentar realizar o cadastro!";
-          }
-        })
-        .catch(function (resposta) {
-          console.log(`#ERRO: ${resposta}`);
-          alert("Tem alguém usando esse email")
-        });
 
 }

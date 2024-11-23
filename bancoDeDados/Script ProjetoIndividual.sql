@@ -1,6 +1,6 @@
 CREATE DATABASE TavernaDasLendas;
 USE TavernaDasLendas;
-DROP DATABASE TavernaDasLendas;
+-- DROP DATABASE TavernaDasLendas;
 
 CREATE TABLE tipoDeJogador (
 	idTipoDeJogador INT PRIMARY KEY AUTO_INCREMENT,
