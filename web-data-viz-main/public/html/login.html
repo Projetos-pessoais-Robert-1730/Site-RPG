@@ -4,40 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../assets/img/icon-taverna-das-lendas.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
     <script src="../global.Js" defer></script>
     <script src="../js/login.js"></script>
-    <title>Home - RPG</title>
+    <title>Login | Taverna das Lendas</title>
 </head>
 <body>
 
     <main>
 
-        <section id="banner"></section> 
-        <section>
-            <div id="imagens">
-                <img src="" alt="">
+        <div class="image-section"></div>
+
+        <section class="formulario">
+
+            <div id="div_Voltar" onclick="window.history.back()">
+                <img src="../assets/img/icon-voltar.png" alt="">
+                <p>Voltar</p>
             </div>
+
             <div id="div_CaixaLogin">
                 <h1>Login</h1>
+
                 <div class="div_inputs">
-                    <p>Email</p>
+                    <label for="ipt_email">Email</label>
                     <input type="text" id="ipt_email" placeholder="Email">
                     <div class="validações" id="div_validaçãoEmail"></div>
                 </div>
+                
                 <div class="div_inputs">
-                    <p>Senha</p>
+                    <label for="ipt_senha">Senha</label>
                     <input type="password" id="ipt_senha" placeholder="Senha">
                     <!-- <button id="button_VisualizarSenha" class="olho" onclick="mudarSenha()">
                         <img src="../assets/img/naoVendoSenha.png" id="olhoSenha">
-                    </button> -->                    <div class="validações" id="div_validaçãoSenha"></div>
+                    </button> -->                    
+                    <div class="validações" id="div_validaçãoSenha"></div>
                 </div>
+                
                 <button onclick="logar()">Entrar</button>
-                <p>Ainda não fez o cadastro? <a href="./cadastro.html">clique aqui</a></p>
+                <p>Ainda não fez o cadastro? <a href="./cadastro.html">Clique aqui</a></p>
             </div>
         </section>
+
     </main>
     
 </body>

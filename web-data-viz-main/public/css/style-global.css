@@ -24,9 +24,12 @@ header nav {
 }
 
 header .logo {
-    width: 4vw;
-    height: 70%;
-    background-color: #D7B89E;
+    height: 80%;
+    cursor: pointer;
+}
+
+header .logo img {
+    height: 100%;
 }
 
 header .links {
