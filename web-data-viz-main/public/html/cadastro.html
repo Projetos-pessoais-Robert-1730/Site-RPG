@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-global.css">
+    <script src="../global.Js"></script>
     <script src="../js/cadastro.js"></script>
     <title>Home - RPG</title>
 </head>
@@ -33,13 +34,17 @@
                 <div class="div_inputs">
                     <p>Senha</p>
                     <input type="password" id="ipt_senha" placeholder="Senha">
-                    <!-- Colocar o Olho -->
+                    <!-- <button id="button_VisualizarSenha" class="olho" onclick="mudarSenha()">
+                        <img src="../assets/img/naoVendoSenha.png" id="olhoSenha">
+                    </button>                     -->
                     <div class="validações" id="div_validaçãoSenha"></div>
                 </div>
                 <div class="div_inputs">
                     <p>Confirme a senha</p>
                     <input type="password" id="ipt_confirmaçãoSenha" placeholder="Confirmação da Senha">
-                    <!-- Colocar o Olho -->
+                    <!-- <button id="button_VisualizarSenha" class="olho" onclick="mudarSenha()">
+                        <img src="../assets/img/naoVendoSenha.png" id="olhoSenha">
+                    </button> -->
                     <div class="validações" id="div_validaçãoSenha2"></div>
                 </div>
                 <div class="div_inputs">
@@ -51,7 +56,6 @@
                         <option value="3">Tormenta 20</option>
                         <option value="4">Outro</option>
                     </select>
-                    <!-- Colocar o Olho -->
                     <div class="validações" id="div_validaçãoSistema"></div>
                 </div>
                 <div class="div_inputs">
@@ -63,7 +67,6 @@
                         <option value="3">Ambos</option>
                         <!-- <option value="Outros">Outro</option> Talvez colocar opção de assistir? -->
                     </select>
-                    <!-- Colocar o Olho -->
                     <div class="validações" id="div_validaçãoTipo"></div>
                 </div>
                 <button onclick="cadastrar()">Cadastrar</button>
