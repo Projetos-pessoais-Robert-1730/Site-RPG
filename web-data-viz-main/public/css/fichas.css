@@ -1,0 +1,102 @@
+main {
+    padding-top: 10vh;
+}
+
+section {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#section_fichas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+#fichas {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+}
+
+.div_NovaFicha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+
+    padding: 15px;
+    width: 20%;
+    height: 30vh;
+
+    background-color: #28292A;
+    color: #D9D9D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#div_mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    background-color: #9E9C9C;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+#div_mais img {
+    width: auto;
+    height: 25%;
+}
+
+#div_texto {
+    display: flex;
+    width: 80%;
+}
+
+.div_NovaFicha p {
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.div_CardFicha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+
+    padding: 15px;
+    width: 20%;
+    height: 30vh;
+
+    background-color: #28292A;
+    color: #D9D9D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#nomePersonagem {
+    font-size: x-large;
+    margin-bottom: 7%;
+}
+
+.div_CardFicha p {
+    font-size: large;
+    margin: 0;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
