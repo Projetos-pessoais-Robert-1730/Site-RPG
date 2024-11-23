@@ -72,6 +72,10 @@ main {
     outline: none;
 }
 
+select {
+    width: 100%;
+}
+
 #div_senha {
     display: flex;
     width: 80%;
