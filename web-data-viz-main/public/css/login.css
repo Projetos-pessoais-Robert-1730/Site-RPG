@@ -3,7 +3,8 @@ main {
     user-select: none;
 }
 
-.image-section {
+/* Imagem */
+.imagem_banner {
     width: 40%;
     height: 100vh;
     background-image: url('../assets/img/banner-login.jpg');
@@ -11,6 +12,7 @@ main {
     background-position: center;
 }
 
+/* Formulário */
 .formulario {
     width: 60%;
     display: flex;
@@ -19,11 +21,13 @@ main {
     align-items: center;
 }
 
+/* Botão de Voltar */
 #div_Voltar {
     display: flex;
-    justify-content: flex-start;
+    margin-left: 15%;
+    align-self: flex-start;
     align-items: center;
-    width: 80%;
+    width: fit-content;
     gap: 10px;
     cursor: pointer;
 }
@@ -45,6 +49,7 @@ main {
     margin-bottom: 20px;
 }
 
+/* Inputs */
 #div_CaixaLogin {
     display: flex;
     flex-direction: column;

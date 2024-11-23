@@ -1,0 +1,123 @@
+main {
+    flex-direction: row;
+    user-select: none;
+}
+
+.formulario {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_Voltar {
+    display: flex;
+    margin-left: 15%;
+    align-self: flex-start;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#div_Voltar p {
+    color: #D9D9D9;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#div_Voltar img {
+    width: auto;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#div_CaixaCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 85%;
+}
+
+#div_CaixaCadastro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.div_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.div_inputs label {
+    font-size: 1.3em;
+}
+
+.div_inputs input, select {
+    width: 95%;
+    height: 40px;
+    background-color: #D9D9D9;
+    color: #120E10;
+    font-size: 1em;
+
+    margin: 10px 0;
+    padding: 0 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#div_senha {
+    display: flex;
+    width: 80%;
+    gap: 15px;
+}
+
+#div_senha input {
+    width: 90%;
+}
+
+.formulario button {
+    width: 30%;
+    height: 40px;
+    background-color: #BF3A53;
+    color: #D9D9D9;
+
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: "Crimson Text", serif;
+
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+#div_CaixaCadastro p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#div_CaixaCadastro a {
+    color: #D7B89E;
+    font-weight: 600;
+}
+
+#div_CaixaCadastro a:hover {
+    color: #BF3A53;
+    transition: 0.3s;
+}
+
+/* Imagem */
+.imagem_banner {
+    width: 40%;
+    height: 100vh;
+    background-image: url('../assets/img/banner-cadastro.jpg');
+    background-size: cover;
+    background-position: center;
+}
