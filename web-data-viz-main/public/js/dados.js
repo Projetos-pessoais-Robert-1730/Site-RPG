@@ -41,15 +41,16 @@ function rolarD3() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
 
     // Adicionar dps o para mostrar em baixo do dado e ver dps se tem como colocar o de vantagem e desvantagem ou somar valor de acordo com o que for rolar, por exemplo, se ele clicar em adicionar desvantagem, ele rolar +1 dado e mostrar o menor valor
+    document.getElementById("resultadoD3").innerHTML = mensagem
 }   
 
 function rolarD4() {
@@ -57,6 +58,8 @@ function rolarD4() {
     var resultado = Number(((aleatório)*(3) + 1).toFixed(0))
     historicoD4.push(resultado)
     históricoGlobal.push(resultado)
+
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -72,13 +75,16 @@ function rolarD4() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD4").innerHTML = mensagem
+
 }   
 
 function rolarD6() {
@@ -86,6 +92,8 @@ function rolarD6() {
     var resultado = Number(((aleatório)*(5) + 1).toFixed(0))
     historicoD6.push(resultado)
     históricoGlobal.push(resultado)
+
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -101,13 +109,16 @@ function rolarD6() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD6").innerHTML = mensagem
+
 }   
 
 function rolarD8() {
@@ -115,6 +126,7 @@ function rolarD8() {
     var resultado = Number(((aleatório)*(7) + 1).toFixed(0))
     historicoD8.push(resultado)
     históricoGlobal.push(resultado)
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -130,13 +142,15 @@ function rolarD8() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD8").innerHTML = mensagem
 
 }   
 
@@ -145,6 +159,7 @@ function rolarD10() {
     var resultado = Number(((aleatório)*(9) + 1).toFixed(0))
     historicoD10.push(resultado)
     históricoGlobal.push(resultado)
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -160,13 +175,15 @@ function rolarD10() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD10").innerHTML = mensagem
 
 }   
 
@@ -175,6 +192,7 @@ function rolarD12() {
     var resultado = Number(((aleatório)*(11) + 1).toFixed(0))
     historicoD12.push(resultado)
     históricoGlobal.push(resultado)
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -190,13 +208,15 @@ function rolarD12() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD12").innerHTML = mensagem
 
 }   
 
@@ -205,6 +225,7 @@ function rolarD18() {
     var resultado = Number(((aleatório)*(17) + 1).toFixed(0))
     historicoD18.push(resultado)
     históricoGlobal.push(resultado)
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -220,13 +241,15 @@ function rolarD18() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD18").innerHTML = mensagem
 
 }   
 
@@ -235,6 +258,7 @@ function rolarD20() {
     var resultado = Number(((aleatório)*(19) + 1).toFixed(0))
     historicoD20.push(resultado)
     históricoGlobal.push(resultado)
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -250,13 +274,15 @@ function rolarD20() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoD20").innerHTML = mensagem
 
 }   
 
@@ -265,6 +291,7 @@ function rolarD100() {
     var resultado = Number(((aleatório)*(99) + 1).toFixed(0))
     historicoD100.push(resultado)
     históricoGlobal.push(resultado)
+    var mensagem = ``
 
     verificarQuantidade()
 
@@ -280,19 +307,22 @@ function rolarD100() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
-
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
 
+    document.getElementById("resultadoD100").innerHTML = mensagem
+
 }   
 
 function rolarPersonalizado() {
-    var tamanho = Number(document.getElementById(iptValorDado).value)
+    var tamanho = Number(document.getElementById("iptValorDado").value)
     var metadeTamanho = tamanho/2
+    var mensagem = ``
 
     if (isNaN(tamanho) || tamanho <= 1) {
         alert("Por favor, insira um número maior que 1.");
@@ -320,13 +350,15 @@ function rolarPersonalizado() {
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
-        mensagem += `<p style="color: ${color};"> ${i+1}º D${dadoAtual}: ${numeroAtual}, </p>`
-
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º D${dadoAtual}: ${numeroAtual}. </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+        } else {
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
         }
 
     }
+
+    document.getElementById("resultadoPersonalizado").innerHTML = mensagem
 
 }
 
@@ -335,7 +367,7 @@ function verificarQuantidade() {
     // Serve para apagar o primeiro indíce sempre que ele passa de 3 (É o splice que faz isso, o primeiro valor é pra falar a posição que é para ser excluída e o segundo valor (O dps da virgula) quantos serão apagados, nesse caso, 1 pois só é necessário apagar apenas o valor 0)
 
     if(históricoGlobal.length > 25) {
-        historico.splice(0 , 1);
+        históricoGlobal.splice(0 , 1);
     }
     
     if(historicoD3.length > 5 ) {
