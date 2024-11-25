@@ -1,18 +1,18 @@
 var contador = 1;
 document.getElementById("radio1").checked = true;
 
-function nextImage() {
-    contador++
-    if (contador > 4) {
-        contador = 1
-    }
+// function nextImage() {
+//     contador++
+//     if (contador > 4) {
+//         contador = 1
+//     }
 
-    document.getElementById("radio"+contador).checked = true
-}
+//     document.getElementById("radio"+contador).checked = true
+// }
 
-setInterval( function(){
-    nextImage()
-}, 2000) 
+// setInterval( function(){
+//     nextImage()
+// }, 2000) 
 
 function mostrarGraficos() {
     mostrarGraficoTipo()
