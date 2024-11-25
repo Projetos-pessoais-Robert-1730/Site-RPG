@@ -39,13 +39,16 @@ function logar() {
                 }, 1000); // apenas para exibir o loading
             });
 
-        } 
+        } else {
+            alert('Usuário ou senha inválido')
+        }
 
         // Fazer uma mensagem de erro quando não for e adicionar um aviso de redirecionamento
 
-    }).catch(function (erro) {
-        console.log(erro);
-    })
+    }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        alert("Já tem alguém com esse e-mail cadastrado")
+    });
 
     return false;
 }

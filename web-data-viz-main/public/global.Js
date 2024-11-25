@@ -9,12 +9,14 @@ function validarSessao() {
         var botaoCadastro = document.getElementById("botaoCadastro");
         var divBotao = document.getElementById("divBotaoCadastro");
         var spanNomeUsuario = document.getElementById("spanUsuario");
+        var navHome = document.getElementById("homeNav")
 
         var primeiroNome = nome.split(" ")[0];
 
         botaoCadastro.style.display = "none";
 
         divBotao.innerHTML += `<button id="button_logout" onclick="limparSessao()">Sair</button>`;
+        navHome.innerHTML = `Taverna`
         spanNomeUsuario.innerHTML = ` ${primeiroNome}`;
 
     } 

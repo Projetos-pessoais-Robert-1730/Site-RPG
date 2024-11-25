@@ -32,19 +32,22 @@ function rolarD3() {
     for (var i = 0; i < historicoD3.length; i++) {
         var numeroAtual = Number(historicoD3[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual < 2) {
             color = `#BF3A53`
+            critico = ``
 
         } else if (numeroAtual < 3) {
             color = `#32CD32`
+            critico = ``
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -66,19 +69,22 @@ function rolarD4() {
     for (var i = 0; i < historicoD4.length; i++) {
         var numeroAtual = Number(historicoD4[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 2) {
             color = `#BF3A53`
+            critico = ``
 
         } else if (numeroAtual < 4) {
             color = `#32CD32`
+            critico = ``
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}</p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -100,19 +106,23 @@ function rolarD6() {
     for (var i = 0; i < historicoD6.length; i++) {
         var numeroAtual = Number(historicoD6[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 3) {
             color = `#BF3A53`
+            critico = ``
 
-        } else if (numeroAtual < 5) {
+        } else if (numeroAtual < 6) {
             color = `#32CD32`
+            critico = ``
+
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}</p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -133,19 +143,23 @@ function rolarD8() {
     for (var i = 0; i < historicoD8.length; i++) {
         var numeroAtual = Number(historicoD8[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 4) {
             color = `#BF3A53`
+            critico = ``
 
-        } else if (numeroAtual < 7) {
+        } else if (numeroAtual < 8) {
             color = `#32CD32`
+            critico = ``
+
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}</p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -166,19 +180,23 @@ function rolarD10() {
     for (var i = 0; i < historicoD10.length; i++) {
         var numeroAtual = Number(historicoD10[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 5) {
             color = `#BF3A53`
+            critico = ``
 
-        } else if (numeroAtual < 9) {
+        } else if (numeroAtual < 10) {
             color = `#32CD32`
+            critico = ``
+
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}</p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -199,19 +217,23 @@ function rolarD12() {
     for (var i = 0; i < historicoD12.length; i++) {
         var numeroAtual = Number(historicoD12[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 6) {
             color = `#BF3A53`
+            critico = ``
 
         } else if (numeroAtual < 12) {
             color = `#32CD32`
+            critico = ``
+
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -232,19 +254,22 @@ function rolarD18() {
     for (var i = 0; i < historicoD18.length; i++) {
         var numeroAtual = Number(historicoD18[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 9) {
             color = `#BF3A53`
+            critico = ``
 
         } else if (numeroAtual < 18) {
             color = `#32CD32`
+            critico = ``
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}</p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -265,19 +290,22 @@ function rolarD20() {
     for (var i = 0; i < historicoD20.length; i++) {
         var numeroAtual = Number(historicoD20[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 10) {
             color = `#BF3A53`
+            critico = ``
 
-        } else if (numeroAtual < 19) {
+        } else if (numeroAtual < 20) {
             color = `#32CD32`
+            critico = ``
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -298,19 +326,23 @@ function rolarD100() {
     for (var i = 0; i < historicoD100.length; i++) {
         var numeroAtual = Number(historicoD100[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= 50 && numeroAtual > 1) {
             color = `#BF3A53`
+            critico = ``
 
         } else if (numeroAtual < 100 && numeroAtual > 1) {
             color = `#32CD32`
+            critico = ``
+
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
@@ -341,19 +373,23 @@ function rolarPersonalizado() {
         var dadoAtual = Number(listaDadosPersonalizado[i])
         var numeroAtual = Number(listaValoresPersonalizado[i]);
         var color = `#D7B89E`
+        var critico = `(Crítico - Valor máximo)`
 
         if (numeroAtual <= metadeTamanho) {
             color = `#BF3A53`
+            critico = ``
 
         } else if (numeroAtual < tamanho) {
             color = `#32CD32`
+            critico = ``
+
             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
         }
 
         if(i == 4) {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
         } else {
-            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual}, </p>`
+            mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
         }
 
     }
