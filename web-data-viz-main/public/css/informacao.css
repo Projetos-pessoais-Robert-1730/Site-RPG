@@ -1,3 +1,5 @@
+/* Estilo que eu quero implementar */
+
 /* 
 
 *{
@@ -180,9 +182,11 @@ body{
 #radio3:checked ~ .navegacaoAutomatica .auto-btn3 {
     background-color: #FFF;
 }
-*/
+ */
 
-.slider{
+/* Slider funcional abaixo */
+
+/* .slider{
     margin: 0 auto;
     width: 800px;
     height: 400px;
@@ -274,5 +278,201 @@ body{
 
 #radio:checked ~ .navegacaoAutomatica .auto-btn3 {
     background-color: #fff;
+} */
+
+/* Situação atual */
+
+/* * {
+    box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; 
+    margin: 0;
+} */
+
+main {
+    padding-top: 15vh;
+    font-family: "Crimson Text", serif;
+}
+
+section {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.informainformaçõesRPG {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.informainformaçõesRPG p{
+    font-size: 1.3rem;
+    margin-top: 2vh;
+}
+
+.carrossel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cardPai {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    background: #252525; /* Fundo do carrossel */
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.cardLista {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.cardItem {
+    list-style: none;
+    flex: none;
+    min-width: calc(100% - 40px); /* Faz o card ocupar o espaço disponível */
+    max-width: 100%;
+}
+
+.cardLink {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: #333; /* Fundo dos cards */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.cardLink:hover {
+    transform: scale(1.05);
+}
+
+.cardImagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 2px solid #444; /* Linha separadora */
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 16px 0;
+    background: #5372F0;
+    border-radius: 12px;
+}
+
+.badge.DnD {
+    background: #D7B89E;
+    color: #090708;
+}
+
+.badge.OP {
+    background: #090708;
+    color: #BF3A53;
+}
+
+.badge.T20 {
+    background: #BF3A53;
+    color: #090708;
+}
+
+.cardTitulo {
+    font-size: 1.2rem;
+    color: #FFF;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #5372F0;
+    color: white;
+}
+
+.manual-btn {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.manual-btn:hover {
+    transform: scale(1.2);
+    background-color: #fff; 
+}
+
+#radio1:checked ~ .cardLista {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .cardLista {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .cardLista {
+    margin-left: -200%;
+}
+
+.navegacaoManual {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10; 
+}
+
+.paiGráficos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.Gráficos {
+    width: 25vw;
+}
+
+/* Vídeo referências
+
+https://www.youtube.com/watch?v=VUtJ7FWCfZA
+https://www.youtube.com/watch?v=BpzyuuPIEaQ
+
+*/
