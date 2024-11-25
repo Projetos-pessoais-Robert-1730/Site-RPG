@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-global.css">
+    <link rel="stylesheet" href="../css/conversa.css">
+    <link rel="shortcut icon" href="../assets/img/icon-taverna-das-lendas.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="../js/conversa.js" defer></script>
+    <title>Taverneiro | Taverna das Lendas</title>
+</head>
+<body>
+    <main>
+        <section class="formulario">
+            <div id="div_Voltar" onclick="window.history.back()">
+                <img src="../assets/img/icon-voltar.png" alt="">
+                <p>Voltar</p>
+            </div>
+            <div id="container">
+                <h1>Taverneiro</h1>
+                <textarea id="pergunta" type="text" placeholder="Digite a pergunta..."></textarea>
+                <br><br>
+                <button onclick="gerarResposta()">Gerar Resposta</button>
+                <h3 id='h3' style="display: none;">Resposta do Taverneiro:</h3>
+                <div id="resposta"></div>
+            </div>    
+        </section> 
+        <div class="imagem_banner"></div>
+    </main>
+</body>
+</html>
+
+
+<!-- <textarea id="pergunta" type="text" placeholder="Digite a pergunta..."></textarea>
+        <br><br>
+        <button onclick="gerarResposta()">Gerar Resposta</button>
+        <h3>Resposta da IA:</h3>
+        <div id="resposta"></div> -->

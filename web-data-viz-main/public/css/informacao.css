@@ -1,3 +1,9 @@
+/* 
+
+*{
+    box-sizing: border-box;
+}
+
 main {
     padding-top: 15vh;
 }
@@ -5,5 +11,268 @@ main {
 section {
     padding-left: 7%;
     padding-right: 7%;
+} 
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.carrossel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrossel input {
+    display: none;
+}
+
+.cardLista {
+    position: relative;
+}
+
+.cardLista .cardItem {
+    list-style: none;
+}
+
+.cardLista .cardItem .cardLink {
+    width: 400px;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.cardLista .cardItem .cardLink:hover {
+    border-color: #5372F0;
+}
+
+.cardLista .cardLink .cardImagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardLista .cardLink .badge {
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDe4FF;
+    width: fit-content;
+}
+
+.cardLista .cardLink .badge.DnD {
+    color: #090708;
+    background: #D7B89E;
+}
+
+.cardLista .cardLink .badge.OP {
+    color: #BF3A53;
+    background: #090708;
+}
+
+.cardLista .cardLink .badge.T20 {
+    color: #090708;
+    background: #BF3A53;
+}
+
+.cardLista .cardLink .cardTitulo {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.cardLista .cardLink .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.cardLista .cardLink:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.navegacaoManual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%; 
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%; 
+}
+
+.navegacaoAutomatica div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacaoAutomatica {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacaoAutomatica div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegacaoAutomatica .auto-btn1 {
+    background-color: #FFF;
+}
+
+#radio2:checked ~ .navegacaoAutomatica .auto-btn2 {
+    background-color: #FFF;
+}
+
+#radio3:checked ~ .navegacaoAutomatica .auto-btn3 {
+    background-color: #FFF;
+}
+*/
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.navegacaoManual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navegacaoAutomatica div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacaoAutomatica {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacaoAutomatica div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio:checked ~ .navegacaoAutomatica .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio:checked ~ .navegacaoAutomatica .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio:checked ~ .navegacaoAutomatica .auto-btn3 {
+    background-color: #fff;
 }
 

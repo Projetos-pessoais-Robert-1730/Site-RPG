@@ -1,0 +1,153 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #63B1BC;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #1F2A44;
+}
+
+textarea[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+select,
+button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #ED145B;
+    color: #FFFFFF;
+    border: none;
+}
+
+button:hover {
+    background-color: #EFB661;
+}
+
+#resposta {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #D0D3D4;
+    border: 1px solid #63666A;
+    text-align: left;
+    display: none;
+} */
+
+/* section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10vh;
+    padding-left: 10vh;
+    height: 90vh;
+} */
+
+main {
+    flex-direction: row;
+    user-select: none;
+}
+
+.formulario {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario button {
+    width: 30%;
+    height: 40px;
+    background-color: #BF3A53;
+    color: #D9D9D9;
+
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: "Crimson Text", serif;
+
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+
+}
+
+#container textarea {
+    width: 50%;
+    height: 40px;
+    background-color: #D9D9D9;
+    color: #120E10;
+    font-size: 1em;
+
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+
+}
+
+#div_Voltar {
+    display: flex;
+    margin-left: 15%;
+    align-self: flex-start;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#div_Voltar p {
+    color: #D9D9D9;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#div_Voltar img {
+    width: auto;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Imagem */
+.imagem_banner {
+    width: 40%;
+    height: 100vh;
+    background-image: url('../assets/img/TaverneiroBebendo.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+#resposta {
+    display: flex;
+}

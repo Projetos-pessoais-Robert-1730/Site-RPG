@@ -35,7 +35,7 @@ function logar() {
                 sessionStorage.NOME_USUARIO = json.nome;
 
                 setTimeout(function () {
-                    window.location = "../index.html";
+                    window.location = "../html/home.html";
                 }, 1000); // apenas para exibir o loading
             });
 

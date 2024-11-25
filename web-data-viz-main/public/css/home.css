@@ -1,0 +1,41 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/img/Taverneiro.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10vh;
+    padding-left: 10vh;
+    height: 90vh;
+}
+
+#div_inicio {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+}
+
+#div_inicio h1 {
+    max-width: 62%;
+}
+
+.botoes a {
+    all: unset;
+    background-image: url("../assets/img/placa.png");
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: black;
+    padding: 5vh;
+    width: 15vw;
+    height: 15vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .botoes button:hover {
+    filter: contrast(100%);
+} */
