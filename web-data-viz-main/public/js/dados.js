@@ -1,16 +1,21 @@
 // Histórico geral (Até 25)
 var históricoGlobal = []
 
-// Histórico dos dados (Até 5)
-var historicoD3 = []
-var historicoD4 = []
-var historicoD6 = []
-var historicoD8 = []
-var historicoD10 = []
-var historicoD12 = []
-var historicoD18 = []
-var historicoD20 = []
-var historicoD100 = []
+// Histórico dos dados (Até 5) Feito num Json contendo listas para melhor entendimento
+
+var dados = {
+
+    historicoD3: [],
+    historicoD4: [],
+    historicoD6: [],
+    historicoD8: [],
+    historicoD10: [],
+    historicoD12: [],
+    historicoD18: [],
+    historicoD20: [],
+    historicoD100: []
+
+}
 
 // Lista para armazenar os valores dos Dados escritos manualmente pelo usuário
 var listaDadosPersonalizado = []
@@ -19,31 +24,42 @@ var historicoPersonalizada = [listaDadosPersonalizado, listaValoresPersonalizado
 
 // Dados principais existentes: d3, d4 ,d6 ,d8 ,d10 ,d12 ,d18, d20, d100
 
-function rolarD3() {
+// Tentando deixar mais otimizado o JS:
+function rolarDados(tipoDado, listaDadoAtual) {
     var aleatório = Math.random()
-    var resultado = Number(((aleatório)*(2) + 1).toFixed(0))
-    historicoD3.push(resultado)
-    históricoGlobal.push(resultado)
+    var resultado = Number(((aleatório)*(tipoDado-1) + 1).toFixed(0))
     
     var mensagem = ``
 
-    verificarQuantidade()
+    // verificarQuantidade()
 
-    for (var i = 0; i < historicoD3.length; i++) {
-        var numeroAtual = Number(historicoD3[i]);
-        var color = `#D7B89E`
-        var critico = `(Crítico - Valor máximo)`
+    var jsonEmOBjeto = JSON.parse(dados);
 
-        if (numeroAtual < 2) {
-            color = `#BF3A53`
-            critico = ``
+    var listaDadoAtual = jsonEmOBjeto.historicoAtual
 
-        } else if (numeroAtual < 3) {
-            color = `#32CD32`
-            critico = ``
-            // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
+    listaDadoAtual.push(resultado)
+
+    for (var i = 0; i < listaDadoAtual.length; i++) {
+        var numeroAtual = Number(listaDadoAtual[i]);
+        var color = `#BF3A53` // Vermelho
+        var corNormal = "#32CD32"; // Verde
+        var corCritica = "#D7B89E"; // Alaranjado
+
+        // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
+
+        var critico = ""
+        
+        var metade = Math.ceil(tipoDado/2)
+
+        if (numeroAtual == tipoDado) {
+            critico = "(Crítico - Valor máximo)";
+            color = corCritica
+
+        }else if (numeroAtual > (metade)) {
+            color = corNormal
+        
         }
-
+        
         if(i == 4) {
             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
         } else {
@@ -53,8 +69,46 @@ function rolarD3() {
     }
 
     // Adicionar dps o para mostrar em baixo do dado e ver dps se tem como colocar o de vantagem e desvantagem ou somar valor de acordo com o que for rolar, por exemplo, se ele clicar em adicionar desvantagem, ele rolar +1 dado e mostrar o menor valor
-    document.getElementById("resultadoD3").innerHTML = mensagem
+    document.getElementById(`resultadoD${tipoDado}`).innerHTML = mensagem
 }   
+
+
+// function rolarD3() {
+//     var aleatório = Math.random()
+//     var resultado = Number(((aleatório)*(2) + 1).toFixed(0))
+//     historicoD3.push(resultado)
+//     históricoGlobal.push(resultado)
+    
+//     var mensagem = ``
+
+//     verificarQuantidade()
+
+//     for (var i = 0; i < historicoD3.length; i++) {
+//         var numeroAtual = Number(historicoD3[i]);
+//         var color = `#D7B89E`
+//         var critico = `(Crítico - Valor máximo)`
+
+//         if (numeroAtual < 2) {
+//             color = `#BF3A53`
+//             critico = ``
+
+//         } else if (numeroAtual < 3) {
+//             color = `#32CD32`
+//             critico = ``
+//             // Verificar qual desses fica melhor: #32CD32, #00FF00, #7CFC00, #7FFF00, #228B22	
+//         }
+
+//         if(i == 4) {
+//             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico} </p>`
+//         } else {
+//             mensagem += `<p style="color: ${color};"> ${i+1}º ${numeroAtual} ${critico}, </p>`
+//         }
+
+//     }
+
+//     // Adicionar dps o para mostrar em baixo do dado e ver dps se tem como colocar o de vantagem e desvantagem ou somar valor de acordo com o que for rolar, por exemplo, se ele clicar em adicionar desvantagem, ele rolar +1 dado e mostrar o menor valor
+//     document.getElementById("resultadoD3").innerHTML = mensagem
+// }   
 
 function rolarD4() {
     var aleatório = Math.random()

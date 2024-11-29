@@ -80,7 +80,7 @@ async function gerarResposta(mensagem) {
 
     try {
         // gerando conteúdo com base na pergunta
-        const resultado = await modeloIA.generateContent(`Em um paragráfo responda: ${mensagem}`);
+        const resultado = await modeloIA.generateContent(`Sendo um taverneiro chamado Boberto, onde você é um anão que minerou muito e abriu sua taverna Taverna das Lendas e que gosta muito de Chopp e que recomenda para todos os Aventureiros que vêem se aventurar em sua taverna em um paragráfo responda: ${mensagem} `);
         const resposta = await resultado.response.text();
         
         console.log(resposta);
